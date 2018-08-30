@@ -47,3 +47,32 @@ n nodes and m edges
 
 But this doesn't consider cycles. Is there a way to build forests from scratch?
 """
+
+"""
+Second test will be recursion
+
+Base case: With 1 vertex, there is exactly one distinct forest (the singleton)
+
+Next case: If there are x distinct forests given n nodes ( f(n) = x ), then what is f(n+1)?
+	Adding another node has multiple options:
+		Don't connect to any other tree, leaving it a singleton					1
+		Connect it to a node. Because there is only one connection point,
+		A cycle can't form. Thus it will still remain a forest.
+		Choosing from n nodes, the direction must be chosen, as well as the
+		distinct forest to build it on, thus 									2n*x
+
+	f(1) = 1, f(n+1) = 1 + 2*n*f(n)
+
+This doesn't work either, as if the nodes are distinct, the last node added will never
+have more than one edge attached.
+"""
+
+
+
+
+
+
+
+
+
+
