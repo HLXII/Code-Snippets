@@ -67,6 +67,22 @@ This doesn't work either, as if the nodes are distinct, the last node added will
 have more than one edge attached.
 """
 
+"""
+Third test: Dividing work
+
+Same base case. I was trying to build forests, when I should divide the work and build trees instead
+
+For example, instead of building a forest with 3 nodes, I can partition the nodes into different trees:
+	1,1,1 - All singleton trees
+	1,2 - Choose 1 for singleton tree, create a 2-node tree with the rest
+	3 - Create a 3 node tree
+
+Thus building an n-node forest would require partitioning the nodes into trees, doing combinatorial
+logic to determine which node goes into what tree, then building the trees. The hard part will be building the trees
+
+That's the new question: How many ways can you build an n-node tree? AKA, every unique topology
+"""
+
 
 
 
