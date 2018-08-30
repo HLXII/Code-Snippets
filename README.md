@@ -10,3 +10,8 @@ Given an even number of moves, any square with an odd coordinate sum will be imp
 
 The outcome (found through brute force) seems to be dependent on factorials and combinations, however I was too lazy to come up with the formula.
 
+## Forest
+
+A little journal of me trying to figure out how to generate all possible forests given a number of vertices in a graph.
+
+
