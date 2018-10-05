@@ -31,14 +31,15 @@ There is a phone game called Magikarp Go!, where you train magikarps to jump hig
 However, the cost of upgrading tasks increases with each upgrade, and the increase in training is also variable. If there is a certain starting amount of money, what set of upgrades would you choose to obtain the maximum average training.
 
 Consider this chart:
+
 | Training | Level | Value | Cost |
 |----------|-------|-------|------|
 | A        | 1     | 1     | 1    |
-| A        | 2     | 3     | 2    |
-| A        | 3     | 5     | 4    |
+|          | 2     | 3     | 2    |
+|          | 3     | 5     | 4    |
 | B        | 1     | 2     | 2    |
-| B        | 2     | 5     | 2    |
-| B        | 3     | 11    | 10   |
+|          | 2     | 5     | 2    |
+|          | 3     | 11    | 10   |
 
 If you are given n dollars, what would be the optimal allocation of your money to maximize your total value? For instance in this chart, given only 1 dollar, you would choose A at level 1. For 14 dollars, you would choose B at level 3, rather than A level 2 and B level 2. since 14 > 3+5.
 
